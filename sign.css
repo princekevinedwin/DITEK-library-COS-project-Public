@@ -1,0 +1,186 @@
+body{
+    background-image: url(wally.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    height: 100vh; 
+    position: relative;
+}
+
+.Signup-page {
+    box-sizing: border-box;
+    border-style: solid ;
+    border-radius: 180px 30px 180px 30px  ;
+    width: 400px;
+    height: 480px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    position: absolute; 
+    left: 510px; 
+    top: 80px; 
+    padding-top: 20px;
+    justify-self: center; 
+    background-color: rgba(255, 255, 255, 0.4);
+    border-width: 5px;
+    border-color: black rgb(63, 13, 13);
+}
+
+input {
+    width: 300px;
+    height: 35px; 
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 20px; 
+}
+
+#Username, #Password {
+    text-align: left;
+    color: black;
+    margin-bottom: 7px; 
+    text-indent: 7px;
+    border-style: groove;
+    box-sizing: border-box ;
+    border-color:rgb(63, 13, 13);
+    border-left: none;
+    border-radius: 0px 30px 30px 0px;
+}
+
+#signinButton {
+    width: 150px;
+    height: 30px; 
+    border-radius: 40px;
+    color: rgb(245, 248, 250);
+    font-weight: bold;
+    background-color: rgb(63, 13, 13);
+    border: 1px solid black; 
+    cursor: pointer;
+    margin-bottom: 1px; 
+    transition: background-color 0.3s ease;
+}
+
+#signinButton:hover {
+    background-color: rgb(177, 171, 176);
+}
+
+#signup {
+    color: rgb(63, 13, 13);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 2px wheat;
+}
+
+h4 {
+    color: rgb(63, 13, 13);
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    -webkit-text-stroke:0.5px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.icon {
+    width: 30px;
+    height: 31px;
+    margin-bottom: -5px;
+    border-color: rgb(63, 13, 13);
+    border-style: inset;
+    background-color: white;
+    border-right: none;
+    border-width: 2px;
+}
+
+.icon-user {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px; 
+    margin-bottom: 0px; 
+    align-content: end;
+}
+
+.paddy {
+    width: 30px;
+    height: 31px;
+    border-color: rgb(63, 13, 13);;
+    border-style: inset;
+    background-color: white;
+    border-right: none;
+    border-width: 2px;
+}
+
+.password-logo {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px; 
+    margin-bottom: 0px; 
+    align-content: end;
+}
+
+#NextPage {
+    color: wheat;
+}
+
+#signinButton, a {
+    text-decoration: none;
+}
+
+#DITEK {
+    font-size: 60px;
+    margin-bottom: -22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color:  rgb(63, 13, 13);
+    -webkit-text-stroke: 0.5px wheat;
+    text-align: center;
+}
+
+.pencil {
+    border: none;
+    height: 60px;
+    margin-bottom: -9px;
+    margin-left: -20px;
+    margin-right: -15px;
+}
+
+.Books {
+    border: none;
+    height: 60px;
+    margin-bottom: -9px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.padlock {
+    width: 30px;
+    height: 31px;
+    margin-bottom: -5px;
+    border-color: rgb(63, 13, 13);
+    border-style: inset;
+    background-color: white;
+    border-right: none;
+    border-width: 2px;
+}
+
+.confirm-password {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px; 
+    margin-bottom: 0px; 
+    align-content: end;
+}
+
+.confirm {
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -1px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    align-self: flex-start;
+    margin-left: 45px;
+    
+}

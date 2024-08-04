@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DITEK LIBRARY</title>
+    <link rel="icon" href="books.png">
+    <link rel="stylesheet" href="DITEK.css">
+</head>
+<body>
+    <header>
+    </header>
+        <div class="loginpage">
+            
+            <div id="close-login-button" class="fas fa-times"></div>
+
+            <form class="Loginpage">
+                <h1 id="DITEK"><strong>D</strong><img class="pencil" src="pencil.png" alt="pencil"><strong>TEK</strong>
+                    <img class="Books" src="books4.png" alt="books">
+                </h2>
+                <p id="login">LOGIN</p>
+                <h4>Log into your account</h4>
+                <div class="icon-user">
+                    <input type="text" name="Username" id="Username" placeholder="Username">
+                    <img src="user.png" alt="icon description" class="icon">
+            </div>
+            <div class="password-logo">
+                <input type="password" name="Password" id="Password" placeholder= "Password">
+                <img src="padlock.png" alt="icon description" class="paddy">
+            </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMeCheckbox" class="checkbox">
+                    <label for="rememberMeCheckbox">Remember me</label>
+                </div>
+                <button type="button" name="LoginButton" id="LoginButton" input type="reset"><a href="#" id="NextPage">LOGIN</a></button>
+                <p id="Forgot">forgot password? <a href="#">Click here to reset password</a></p>
+                <button type="button" name="Register" id="Register"><a href="sign.html
+                    " id="RegisterButton">Register new Account</a>
+                <button id="GoogleButton">
+                    <img class="googleIcon" src="google.png" alt="google logo">Sign in with Google
+                </button>
+            </form>
+        </div>
+    
+        <div id="quote-slideshow" class="QuotePage">
+            <div class="quote A"><i>"Libraries store the energy that fuels the imagination.open up windows to the world <br>and inspire us to explore and acheive,and contribute to improving our quality."</i><br>--Sidney Sheldon</div>
+            <div class="quote B"><i>"The only thing that you absolutely have to know is the location of a library."</i><br>--Albert Einsten</div>
+            <div class="quote C"><i>"A library outranks any other one thing a community can do to benefit its people. <br>it is a never failing spring in the desert"</i><br>--Andrew Carnegie</div>
+            <div class="quote D"><i>"Libraries are the wardrobes of literature."</i><br>--George Dyer</div>
+            <div class="quote E"><i>"Libraries will get you through times of no money better than<br> money will get you through times of no libraries"</i><br>--Anne Herbert</div>
+            <div class="quote F"><i>"Libraries are not made; they grow."</i><br>--Augustine Birell</div>
+            
+        </div>
+
+        <script>
+            let currentIndex = 0;
+            const quotes = document.querySelectorAll('.quote');
+            const totalQuotes = quotes.length;
+    
+            function showQuote(index) {
+                quotes.forEach((quote, i) => {
+                    quote.style.display = i === index ? 'block' : 'none';
+                });
+            }
+    
+            function nextQuote() {
+                currentIndex = (currentIndex + 1) % totalQuotes;
+                showQuote(currentIndex);
+            }
+    
+            setInterval(nextQuote, 5000); 
+    
+            
+            showQuote(currentIndex);
+        </script>
+        
+<script src="kevin.js"></script>
+
+    </body>
+    <footer></footer>
+</body>
+</html>
