@@ -1,7 +1,7 @@
 from flask import render_template, request
 from app import app, db
 from flask_login import login_user, current_user
-from models import User
+from app.models import User
 
 @app.route("/")
 def home_page():
@@ -25,7 +25,7 @@ def login():
     return "User Logged In", 200
 
 @app.route("/api/register", methods=["POST"])
-def login():
+def register():
     data = request.json
     username = data.get("username")
     password = data.get("username")
