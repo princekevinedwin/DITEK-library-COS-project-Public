@@ -1,4 +1,3 @@
-// Toggle search form
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () => {
@@ -32,10 +31,6 @@ document.querySelector('#login-btn').onclick = () => {
     loginForm.classList.toggle('active');
 }
 
-document.querySelector('#close-login-btn').onclick = () => {
-    loginForm.classList.remove('active');
-}
-
 // Header behavior on scroll
 window.onscroll = () => {
     searchForm.classList.remove('active');
@@ -54,6 +49,18 @@ window.onload = () => {
         document.querySelector('.header .header-2').classList.remove('active');
     }
 }
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 // Swiper initialization
 var swiperBooks = new Swiper(".books-slider", {
@@ -106,24 +113,29 @@ var swiperFeatured = new Swiper(".featured-slider", {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-
-    const swiper = new Swiper('.swiper', {
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+var swiperFeatured = new Swiper(".reviews-slider", {
+    spaceBetween: 10,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+        768: {
+            slidesPerView: 2,
         },
-    });
-
-  
-    const searchBtn = document.getElementById('search-btn');
-    const searchForm = document.querySelector('.search-form');
-    searchBtn.addEventListener('click', function() {
-        searchForm.classList.toggle('active');
-    });
+        1024: {
+            slidesPerView: 3,
+        },
+    },
 });
+
+const searchBtn = document.getElementById('search-btn');
+
+document.querySelector('#search-btn').onclick = () => {
+    searchForm.classList.toggle('active');
+}

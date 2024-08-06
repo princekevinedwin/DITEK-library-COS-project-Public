@@ -175,7 +175,7 @@ section {
 
 
 .home{
-    background: url(waller.jpg) no-repeat;
+    background: url(../img/waller.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -376,7 +376,7 @@ section {
 }
 
 .newsletter{
-    background:url(newsletter.jpg) no-repeat;
+    background:url(../img/newsletter.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
