@@ -113,9 +113,11 @@ var swiperFeatured = new Swiper(".featured-slider", {
 
 
 
+
 var swiperFeatured = new Swiper(".reviews-slider", {
     spaceBetween: 10,
     loop: true,
+    grabCursor: true,
     centeredSlides: true,
     autoplay: {
         delay: 9500,
@@ -133,6 +135,8 @@ var swiperFeatured = new Swiper(".reviews-slider", {
         },
     },
 });
+
+
 
 const searchBtn = document.getElementById('search-btn');
 
