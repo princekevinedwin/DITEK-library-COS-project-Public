@@ -569,6 +569,67 @@ section {
     line-height: 2;
 }
 
+/* Styles for Settings Section */
+.settings {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.settings .row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.settings .content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings h2 {
+    color: #333;
+}
+
+.settings h3 {
+    color: #555;
+}
+
+.settings form {
+    margin-bottom: 20px;
+}
+
+.settings label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.settings input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.settings .btn {
+    background-color: #84129b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.settings .btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-account {
+    margin-top: 20px;
+}
+
+
 
 .footer .box-container{
     display: grid;

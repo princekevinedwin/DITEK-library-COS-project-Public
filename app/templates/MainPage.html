@@ -44,6 +44,7 @@
                 <a href="#arrivals">arrivals</a>
                 <a href="#reviews">reviews</a>
                 <a href="#blogs">blogs</a>
+                <a href="#settings">settings</a>
             </nav>
         </div>
     </header>
@@ -57,6 +58,7 @@
         <a href="#arrivals" class="fas fa-tags"></a>
         <a href="#reviews" class="fas fa-comments"></a>
         <a href="#contact" class="fas fa-blogs"></a>
+        <a href="#Settings" class="fas fa-blogs"></a>
     </nav>
 
     <!--home section starts-->
@@ -793,6 +795,35 @@
 
      </section>
      <!--blogs section ends-->
+      <!-- Settings Section -->
+    <section class="settings" id="settings">
+        <div class="row">
+            <div class="content">
+                <h2>User Settings</h2>
+                
+                <div class="profile-info">
+                    <h3>Update Profile</h3>
+                    <form id="update-form">
+                        <input type="hidden" id="user-id">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone">
+                        <label for="password">New Password:</label>
+                        <input type="password" id="password">
+                        <button type="submit" class="btn">Update Profile</button>
+                    </form>
+                </div>
+
+                <div class="delete-account">
+                    <h3>Delete Account</h3>
+                    <button id="delete-button" class="btn">Delete My Account</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
      <!--footer section starts-->
 
